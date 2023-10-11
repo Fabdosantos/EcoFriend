@@ -1,4 +1,4 @@
-import 'package:ecofriend/screens/create_profile_screen.dart';
+import 'package:ecofriend/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const CreateProfileScreen(),
+      body: const LoginScreen(),
     );
   }
 }
