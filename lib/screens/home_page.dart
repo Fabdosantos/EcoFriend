@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("Eco Friend"),
+        const Text("Eco Friend", style: TextStyle()),
         TextButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text("Voltar"),
+          child: const Text("Voltar"),
         )
       ],
     );
