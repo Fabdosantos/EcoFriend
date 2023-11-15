@@ -1,3 +1,4 @@
+import 'package:ecofriend/screens/usuario_page.dart';
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatefulWidget {
@@ -49,7 +50,12 @@ class _BottomBarState extends State<BottomBar> {
                   Icons.person,
                   size: 34,
                 ),
-                onPressed: () => _handleButtonActived(1),
+                onPressed: () {
+                  _handleButtonActived(1);
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const UsuarioPage(),
+                  ));
+                },
               ),
               const Text("Usuario")
             ],
