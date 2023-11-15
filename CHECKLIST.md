@@ -1,0 +1,1 @@
+- [ ] Trabalhar no card de dicas sustentáveis da página Home
